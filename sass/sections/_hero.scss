@@ -15,6 +15,10 @@
   background-position: center;
   margin-left: auto;
   margin-right: auto;
+  @media screen and (min-width: 1200px) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 
 .hero-title {
@@ -22,12 +26,21 @@
   font-size: 17px;
   line-height: 1.36;
   text-align: center;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--white-color);
   margin-bottom: 20px;
   margin-left: 0;
   margin-right: 0;
+  @media screen and (min-width: 480px) {
+    font-size: 26px;
+    line-height: 1.62;
+    margin-bottom: 30px;
+  }
+  @media screen and (min0width: 1200px) {
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .hero-button {
