@@ -11,15 +11,24 @@
   position: absolute;
   top: 50%;
   left: 50%;
+  width: 100%;
+  height: 90%;
   transform: translate(-50%, -50%) scale(1);
   padding: 30px;
   background-color: var(--white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  width: 100%;
-  height: 90%;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @media screen and (min-width: 480px) {
+    width: 459px;
+    height: 609px;
+    padding: 40px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+    height: 581px;
+  }
   .backdrop.is-hidden & {
     transform: translate(-50%, -50%) scale(0);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -38,10 +47,12 @@
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   background-color: var(--white-color);
-  cursor: pointer;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @media screen and (min-width: 1200px) {
+    cursor: pointer;
+  }
 }
 
 .modal-close-button:hover .close-icon,
@@ -64,6 +75,12 @@
   letter-spacing: 0.03em;
   color: var(--header-color);
   margin-bottom: 12px;
+  @media screen and (min-width: 480px) {
+    font-size: 20px;
+  }
+  @media screen and (min-width: 1200px) {
+    line-height: 1.15;
+  }
 }
 
 .modal-label {
@@ -72,6 +89,9 @@
   line-height: 1.17;
   letter-spacing: 0.01em;
   margin-bottom: 4px;
+  @media screen and (min-width: 480px) {
+    font-size: 12px;
+  }
 }
 
 .modal-input {
@@ -81,10 +101,12 @@
   border-radius: 4px;
   padding-left: 42px;
   outline: transparent;
-
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   .modal-wrapper:focus-within & {
     border: 1px solid var(--accent-color);
+  }
+  @media screen and (min-width: 480px) {
+    height: 40px;
   }
 }
 
@@ -130,6 +152,12 @@
     line-height: 1.14;
     letter-spacing: 0.01em;
     color: rgba(117, 117, 117, 0.5);
+    @media screen and (min-width: 480px) and (max-width: 1199px) {
+      font-size: 14px;
+    }
+  }
+  @media screen and (min-width: 480px) {
+    height: 120px;
   }
 }
 

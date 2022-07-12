@@ -11,6 +11,13 @@
   font-size: 10px;
   line-height: 1.17;
   letter-spacing: 0.03em;
+  @media screen and (min-width: 480px) {
+    font-size: 12px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .checked-wrapper {
@@ -46,13 +53,6 @@
   background-color: var(--accent-color);
   border-radius: 2px;
 }
-
-// .checkbox-wrapper {
-//   display: flex;
-//   margin-bottom: 30px;
-//   justify-content: center;
-//   text-align: center;
-// }
 
 // .privacy-text {
 //   display: flex;

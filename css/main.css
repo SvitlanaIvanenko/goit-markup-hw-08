@@ -46,7 +46,6 @@ body {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  overflow: hidden;
 }
 @media screen and (min-width: 480px) {
   .container {
@@ -256,7 +255,7 @@ body {
     margin-bottom: 30px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) {
   .hero-title {
     width: 360px;
   }
@@ -787,14 +786,27 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
+  width: 100%;
+  height: 90%;
   transform: translate(-50%, -50%) scale(1);
   padding: 30px;
   background-color: var(--white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  width: 100%;
-  height: 90%;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 459px;
+    height: 609px;
+    padding: 40px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
 }
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0);
@@ -813,8 +825,12 @@ body {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   background-color: var(--white-color);
-  cursor: pointer;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 1200px) {
+  .modal-close-button {
+    cursor: pointer;
+  }
 }
 
 .modal-close-button:hover .close-icon,
@@ -838,6 +854,16 @@ body {
   color: var(--header-color);
   margin-bottom: 12px;
 }
+@media screen and (min-width: 480px) {
+  .modal-title {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal-title {
+    line-height: 1.15;
+  }
+}
 
 .modal-label {
   font-weight: 400;
@@ -845,6 +871,11 @@ body {
   line-height: 1.17;
   letter-spacing: 0.01em;
   margin-bottom: 4px;
+}
+@media screen and (min-width: 480px) {
+  .modal-label {
+    font-size: 12px;
+  }
 }
 
 .modal-input {
@@ -858,6 +889,11 @@ body {
 }
 .modal-wrapper:focus-within .modal-input {
   border: 1px solid var(--accent-color);
+}
+@media screen and (min-width: 480px) {
+  .modal-input {
+    height: 40px;
+  }
 }
 
 .modal-wrapper {
@@ -905,6 +941,16 @@ body {
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .modal-textarea::placeholder {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .modal-textarea {
+    height: 120px;
+  }
+}
 
 .modal-link {
   color: var(--accent-color);
@@ -938,6 +984,17 @@ body {
   font-size: 10px;
   line-height: 1.17;
   letter-spacing: 0.03em;
+}
+@media screen and (min-width: 480px) {
+  .privacy-text {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .privacy-text {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .checked-wrapper {
