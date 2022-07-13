@@ -11,6 +11,11 @@
   letter-spacing: 0.03em;
   color: var(--accent-color);
   margin-right: 93px;
+  @media screen and (max-width: 1199px) {
+    font-size: 24px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
 }
 
 .studio-header {
@@ -42,6 +47,7 @@
 
 .header-contacts {
   display: flex;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -57,10 +63,16 @@
   &:focus {
     color: var(--accent-color);
   }
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
 
 .header-list {
   display: flex;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
 
 .header-nav {
