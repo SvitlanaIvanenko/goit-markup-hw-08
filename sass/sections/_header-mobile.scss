@@ -17,6 +17,7 @@
   background-color: #fff;
   top: 0;
   left: 0;
+  z-index: 2;
   width: 100vw;
   height: 100vh;
   padding-top: 48px;
@@ -102,4 +103,10 @@
 
 .mobile-media {
   display: flex;
+}
+
+.current {
+  @media screen and (max-width: 767px) {
+    color: var(--accent-color);
+  }
 }
