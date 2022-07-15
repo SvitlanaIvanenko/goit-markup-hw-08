@@ -1,10 +1,10 @@
 .clients__title {
+  margin-bottom: 30px;
   font-size: 24px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--header-color);
-  margin-bottom: 30px;
   @media screen and (min-width: 480px) {
     font-size: 28px;
   }
@@ -19,6 +19,7 @@
   flex-wrap: wrap;
   gap: 30px;
 }
+
 .clients__item {
   width: calc((100% - 30px) / 2);
   height: 92px;

@@ -124,6 +124,8 @@ body {
   .header-logo {
     font-size: 26px;
     margin-right: 93px;
+    padding-top: 24px;
+    padding-bottom: 24px;
   }
 }
 
@@ -140,13 +142,13 @@ body {
 
 .header-link {
   display: inline-block;
+  padding-top: 32px;
+  padding-bottom: 32px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--header-color);
-  padding-top: 32px;
-  padding-bottom: 32px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-link:hover, .header-link:focus {
@@ -159,14 +161,16 @@ body {
 
 .header-contacts {
   display: flex;
+  align-items: center;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: inherit;
-  align-items: center;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   margin-left: auto;
+}
+.header-contacts:not(:last-child) {
   margin-bottom: 10px;
 }
 @media screen and (min-width: 1200px) {
@@ -176,6 +180,7 @@ body {
   }
   .header-contacts:not(:last-child) {
     margin-right: 30px;
+    margin-bottom: 0;
   }
 }
 @media screen and (max-width: 767px) {
@@ -205,8 +210,13 @@ body {
 }
 
 .contacts-icon {
-  margin-right: 10px;
+  margin-right: 8px;
   fill: currentColor;
+}
+@media screen and (min-width: 1200px) {
+  .contacts-icon {
+    margin-right: 10px;
+  }
 }
 
 .icon-envelope {
@@ -361,7 +371,11 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: none;
-  cursor: pointer;
+}
+@media screen and (min-width: 1200px) {
+  .button {
+    cursor: pointer;
+  }
 }
 
 .hero {
@@ -409,16 +423,16 @@ body {
 }
 
 .hero-title {
-  font-weight: 900;
-  font-size: 17px;
-  line-height: 1.36;
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--white-color);
   margin-bottom: 20px;
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
+  font-weight: 900;
+  font-size: 17px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--white-color);
 }
 @media screen and (min-width: 480px) {
   .hero-title {
@@ -452,12 +466,12 @@ body {
 }
 
 .benefits__title {
+  margin-bottom: 10px;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--header-color);
-  margin-bottom: 10px;
 }
 @media screen and (max-width: 767px) {
   .benefits__title {
@@ -523,12 +537,12 @@ body {
 }
 
 .activity__title {
+  text-align: center;
+  margin-bottom: 50px;
   font-size: 36px;
   line-height: 1.17;
-  text-align: center;
   letter-spacing: 0.03em;
   color: var(--header-color);
-  margin-bottom: 50px;
 }
 
 .activity__item:not(:last-child) {
@@ -544,10 +558,10 @@ body {
 }
 
 .activity__text {
+  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
   bottom: 0;
   width: 100%;
   height: 70px;
@@ -565,9 +579,9 @@ body {
 }
 
 .team-title {
+  text-align: center;
   font-size: 28px;
   line-height: 1.17;
-  text-align: center;
   letter-spacing: 0.03em;
   color: var(--header-color);
   margin-bottom: 30px;
@@ -580,21 +594,21 @@ body {
 }
 
 .team-name {
+  margin-bottom: 10px;
+  text-align: center;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
-  text-align: center;
   letter-spacing: 0.03em;
   color: var(--header-color);
-  margin-bottom: 10px;
 }
 
 .team-position {
+  margin-bottom: 16px;
+  text-align: center;
   font-size: 16px;
   line-height: 1.19;
-  text-align: center;
   letter-spacing: 0.03em;
-  margin-bottom: 16px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -615,6 +629,11 @@ body {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
+@media screen and (max-width: 767px) {
+  .team-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
 @media screen and (min-width: 768px) {
   .team-item {
     width: calc((100% - 30px) / 2);
@@ -632,6 +651,11 @@ body {
 .team-content {
   padding-top: 30px;
   padding-bottom: 24px;
+}
+@media screen and (min-width: 1200px) {
+  .team-content {
+    padding-bottom: 30px;
+  }
 }
 
 .team-media-item {
@@ -666,12 +690,12 @@ body {
 }
 
 .clients__title {
+  margin-bottom: 30px;
   font-size: 24px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--header-color);
-  margin-bottom: 30px;
 }
 @media screen and (min-width: 480px) {
   .clients__title {
@@ -818,13 +842,13 @@ body {
 }
 
 .footer-title {
+  margin-bottom: 20px;
   text-align: center;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #fff;
-  margin-bottom: 20px;
 }
 @media screen and (min-width: 1200px) {
   .footer-title {
@@ -895,6 +919,7 @@ body {
     display: inline;
     width: 358px;
     margin-right: 12px;
+    margin-bottom: 0;
   }
 }
 
@@ -924,6 +949,11 @@ body {
     align-items: baseline;
     justify-content: space-around;
     margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-wrapper {
+    margin-bottom: 0;
   }
 }
 
@@ -1034,11 +1064,11 @@ body {
 }
 
 .modal-label {
+  margin-bottom: 4px;
   font-weight: 400;
   font-size: 10px;
   line-height: 1.17;
   letter-spacing: 0.01em;
-  margin-bottom: 4px;
 }
 @media screen and (min-width: 480px) {
   .modal-label {
@@ -1093,11 +1123,11 @@ body {
 .modal-textarea {
   width: 100%;
   height: 90px;
+  padding: 12px 16px;
   overflow: auto;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   resize: none;
-  padding: 12px 16px;
   outline: transparent;
 }
 .modal-wrapper:focus-within .modal-textarea {
@@ -1176,10 +1206,10 @@ body {
 }
 
 .checkbox-icon {
-  fill: transparent;
   border: 2px solid var(--header-color);
   border-radius: 2px;
   align-items: center;
+  fill: transparent;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-checkbox:checked + .privacy-text .checkbox-icon {

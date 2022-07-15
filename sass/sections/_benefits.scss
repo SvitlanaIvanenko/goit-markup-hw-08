@@ -5,12 +5,12 @@
 }
 
 .benefits__title {
+  margin-bottom: 10px;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--header-color);
-  margin-bottom: 10px;
   @media screen and (max-width: 767px) {
     text-align: center;
   }
@@ -62,14 +62,3 @@
   background-color: #f5f4fa;
   border-radius: 4px;
 }
-
-// .benefits__wrapper {
-//   display: flex;
-//   width: 270px;
-//   height: 120px;
-//   margin-bottom: 30px;
-//   justify-content: center;
-//   align-items: center;
-//   background-color: #f5f4fa;
-//   border-radius: 4px;
-// }
